@@ -11,9 +11,14 @@
         src: url("https://abs.twimg.com/responsive-web/client-web/Chirp-Regular.80fda27a.woff2") format("woff2");
       }
 
-      @font-face {
-        font-family: "TwitterChirp-bold";
-        src: url("https://abs.twimg.com/responsive-web/client-web/Chirp-Regular.80fda27a.woff2") format("woff2");
+      html::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      html {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
       }
 
       * {
@@ -39,6 +44,8 @@
         align-items: center;
         height: 53px;
         width: 100%;
+        position: fixed;
+        background-color: #ffffff;
       }
 
       .header .back {
@@ -66,6 +73,7 @@
       .main-content {
         flex: 1;
         width: 100%;
+        padding-top: 53px;
       }
 
       .user-info {
@@ -99,6 +107,7 @@
         height: 56px;
         position: fixed;
         bottom: 0;
+        background-color: #ffffff;
       }
 
       .text-bar {
@@ -182,6 +191,48 @@
           <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_200x200.png" />
           <p class="display-name">Display Name</p>
           <p class="username">@username</p>
+        </div>
+        <div class="my-message-container">
+          <div class="my-message">Hello, how are you?</div>
+        </div>
+        <div class="other-message-container">
+          <div class="other-message">I'm good, thank you!</div>
+        </div>
+        <div class="my-message-container">
+          <div class="my-message">Hello, how are you?</div>
+        </div>
+        <div class="other-message-container">
+          <div class="other-message">I'm good, thank you!</div>
+        </div>
+        <div class="my-message-container">
+          <div class="my-message">Hello, how are you?</div>
+        </div>
+        <div class="other-message-container">
+          <div class="other-message">I'm good, thank you!</div>
+        </div>
+        <div class="my-message-container">
+          <div class="my-message">Hello, how are you?</div>
+        </div>
+        <div class="other-message-container">
+          <div class="other-message">I'm good, thank you!</div>
+        </div>
+        <div class="my-message-container">
+          <div class="my-message">Hello, how are you?</div>
+        </div>
+        <div class="other-message-container">
+          <div class="other-message">I'm good, thank you!</div>
+        </div>
+        <div class="my-message-container">
+          <div class="my-message">Hello, how are you?</div>
+        </div>
+        <div class="other-message-container">
+          <div class="other-message">I'm good, thank you!</div>
+        </div>
+        <div class="my-message-container">
+          <div class="my-message">Hello, how are you?</div>
+        </div>
+        <div class="other-message-container">
+          <div class="other-message">I'm good, thank you!</div>
         </div>
         <div class="my-message-container">
           <div class="my-message">Hello, how are you?</div>
