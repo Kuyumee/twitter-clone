@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Facebook</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+        color: rgb(5, 5, 5);
+        background-color: #f0f2f5;
+        -webkit-font-smoothing: antialiased;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+
+        position: fixed;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .banner {
+        height: 56px;
+      }
+      .pfp {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+        margin-left: 8px;
+
+        border-color: rgba(0, 0, 0, 0.4);
+        border-width: 1px;
+        border-style: solid;
+      }
+      .profile-container {
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+
+        width: 876px;
+        height: 200px;
+
+        padding-top: 56px;
+      }
+      .profilepic {
+        width: 168px;
+        height: 168px;
+
+        border-radius: 50%;
+      }
+      .name {
+        font-size: 32px;
+        font-weight: 700;
+        margin-left: 16px;
+      }
+      .add {
+        margin-right: 16px;
+        margin-left: auto;
+      }
+      .posts-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .post {
+        margin-top: 16px;
+        width: 680px;
+        background-color: #ffffff;
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 6px;
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .post-image {
+        margin-top: 16px;
+        width: 654px;
+        border-radius: 16px;
+      }
+
+      .post-headers {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .post-name {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 6px;
+      }
+
+      .post-caption {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 8px;
+      }
+
+      .post-pfp {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+        margin-left: 16px;
+        margin-top: 16px;
+      }
+      .comments {
+        display: flex;
+        align-items: center;
+      }
+      .comment-pfp {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-left: 16px;
+        margin-right: 8px;
+      }
+
+      /* hide scrollbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header"><img class="banner" src="banner.png" /><img class="pfp" src="mypfp.png" /></div>
+    <div class="profile-container">
+      <div class="profile">
+        <img class="profilepic" src="pfp.jpg" />
+        <p class="name">Aubrey Espinosa</p>
+        <img class="add" src="add.png" />
+      </div>
+      <img src="navbar.png" />
+    </div>
+    <div class="posts-container">
+      <div class="post">
+        <div class="post-headers">
+          <img class="post-pfp" src="pfp.jpg" />
+          <p class="post-name">Aubrey Espinosa</p>
+        </div>
+        <p class="post-caption">🍜</p>
+        <img class="post-image" src="1.jpg" />
+        <img class="interactions" src="interactions.png" />
+        <div class="comments">
+          <img class="comment-pfp" src="mypfp.png" />
+          <img class="comment" src="comment.png" />
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-headers">
+          <img class="post-pfp" src="pfp.jpg" />
+          <p class="post-name">Aubrey Espinosa</p>
+        </div>
+        <p class="post-caption">Night drive ✨️</p>
+        <img class="post-image" src="2.jpg" />
+        <img class="interactions" src="interactions.png" />
+        <div class="comments">
+          <img class="comment-pfp" src="mypfp.png" />
+          <img class="comment" src="comment.png" />
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-headers">
+          <img class="post-pfp" src="pfp.jpg" />
+          <p class="post-name">Aubrey Espinosa</p>
+        </div>
+        <p class="post-caption">Need a drink?</p>
+        <img class="post-image" src="3.jpg" />
+        <img class="interactions" src="interactions.png" />
+        <div class="comments">
+          <img class="comment-pfp" src="mypfp.png" />
+          <img class="comment" src="comment.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
